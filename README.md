@@ -1,1 +1,6 @@
 # Food-delivery-time-prediction-using-LSTM-neural-network
+This code assumes that you have a CSV file named 'food_delivery_data.csv' containing the necessary data for training the model, with columns for features such as the distance between the restaurant and the customer, the number of items in the order, and the day of the week. It also assumes that you have already installed the necessary libraries such as pandas, numpy, plotly express, sklearn, and keras.
+
+The code first loads the dataset and preprocesses it by dropping unnecessary columns, scaling the target variable (delivery time), and splitting it into training and testing sets. It then creates an LSTM neural network model with multiple layers and trains it on the training set. Early stopping is used to prevent overfitting. The model is then evaluated on the testing set using root mean squared error (RMSE) as the evaluation metric. Finally, the trained model is saved for future use.
+
+Note that this is just an example code, and you can customize it to fit your specific project requirements and dataset. You may need to modify the code to load and preprocess your data, adjust the architecture of the neural network, and fine-tune the hyperparameters to achieve better performance.
